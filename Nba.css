@@ -1,0 +1,420 @@
+html {
+    height: 100%;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    font-size: 100%;
+}
+
+body {
+    background-image: url("img/cool-background\ \(1\).png")
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 980px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* nav styles */
+
+nav {
+    background-color: rgb(87, 87, 194);
+    max-width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: capitalize;
+    display: block;
+}
+
+nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#word1,
+#word2 {
+    text-transform: uppercase;
+}
+
+#word3 {
+    background: url("img/user_new.png") no-repeat center;
+    background-size: 80%;
+}
+
+.social #word3 a {
+    text-indent: -10000px;
+    padding: 0 10px;
+}
+
+#word4 {
+    background: url("img/basketball.svg") no-repeat center;
+    background-size: 80%;
+}
+
+nav #word4 a {
+    text-indent: -10000px;
+    padding: 0 10px;
+}
+
+/* header styles */
+
+header img {
+    width: 100%;
+    display: block;
+    max-height: 300px;
+    background-size: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: rgb(2, 52, 128);
+    text-transform: uppercase;
+    padding: 15px 0;
+    font-size: 3em;
+    font-family: 'Lalezar', cursive;
+    letter-spacing: 3px;
+}
+
+.div-h1 {
+    margin: 15px 0;
+}
+
+/* main styles */
+
+.container1 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.container1 .img1 img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: rgb(20, 20, 158);
+}
+
+.container1 .img2 img {
+    width: 100%;
+}
+
+.content1 {
+    padding: 20px 0;
+}
+
+.content2 {
+    padding: 20px 0;
+}
+
+.content1 p,
+.content2 p {
+    padding-bottom: 10px;
+}
+
+.container1 .img3 img {
+    width: 100%
+}
+
+.content3 {
+    padding: 20px 0;
+}
+
+.box {
+    flex: 1 1 auto;
+}
+
+/* middle */
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+}
+
+.middle {
+    flex-grow: 1;
+}
+
+.middle1 img {
+    width: 100%;
+}
+
+.middle2 img {
+    width: 50%;
+}
+
+.container1 a:hover {
+    color: grey;
+}
+
+/* form */
+
+.div-2 {
+    text-align: center;
+    color: white;
+    background-color: rgb(2, 52, 128);
+    text-transform: uppercase;
+    padding: 15px 0;
+    font-size: 3em;
+    font-family: 'Lalezar', cursive;
+    letter-spacing: 3px;
+}
+
+.subscribe {
+    padding: 20px 0;
+}
+
+.name,
+.password,
+.email,
+.submit {
+    padding: 10px 0;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: space-between;
+}
+
+form,
+.next-img {
+    width: 50%;
+}
+
+.next-img img {
+    display: block;
+    width: 100%;
+}
+
+form {
+    max-width: 50%;
+    margin: 0 10px;
+    margin-right: 15px;
+    padding: 0 15px;
+    color: white;
+    background-color: rgb(106, 106, 143);
+    border: 2px solid black;
+    border-radius: .2em;
+}
+
+form input {
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+form .submit input:hover {
+    background-color: rgb(241, 237, 237);
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin: 0 .6rem;
+}
+
+#name,
+#password,
+#email {
+    width: 85%;
+    margin: .5rem .5rem;
+}
+
+.submit {
+    text-align: center;
+    margin-left: .8rem;
+    position: relative;
+}
+
+.submit:hover {
+    bottom: 3px;
+}
+
+#submit {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgb(64, 5, 204);
+}
+
+input[type="text"] {
+    padding-left: 50px;
+    background: url("img/name.png") no-repeat left;
+    color: rgb(231, 231, 231);
+    background-position: 8px;
+}
+
+input[type="email"] {
+    padding-left: 50px;
+    background: url("img/mail.png") no-repeat left;
+    color: rgb(231, 231, 231);
+    background-position: 8px;
+}
+
+input[type="password"] {
+    padding-left: 50px;
+    background: url("img/lock.png") no-repeat left;
+    color: rgb(231, 231, 231);
+    background-position: 10px;
+}
+
+::placeholder {
+    color: black;
+}
+
+/* valdiation */
+
+input[type="text"]:valid,
+input[type="password"]:valid,
+input[type="email"]:valid {
+    border: 2px solid rgb(3, 97, 3);
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(22, 90, 190);
+
+}
+
+footer p {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+footer div {
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+#only {
+    color: rgb(255, 31, 31);
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1257px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    nav {
+        display: block;
+    }
+
+    main {
+        font-size: 1rem;
+    }
+
+    .container1 {
+        flex-wrap: wrap;
+    }
+
+    .scores {
+        width: 100%;
+        display: block;
+    }
+
+    .scores li:first-child {
+        display: none;
+    }
+
+    .scores a:hover {
+        border: 1px solid white;
+    }
+
+    .social a:hover {
+        border: 1px solid white;
+    }
+
+}
+
+@media only screen and (max-width: 826px) {
+    .subscribe {
+        display: block;
+        width: 100%;
+    }
+
+    .next-img,
+    form {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #media {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    #name,
+    #password,
+    #email,
+    #submit {
+        width: 50%;
+    }
+
+    .name,
+    .password,
+    .email {
+        text-align: center;
+    }
+
+    .next-img {
+        width: 98%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 424px) {
+    .social li:nth-child(4) {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .div-h2 h1 {
+        font-size: 1.5em;
+    }
+
+    #submit {
+        white-space: normal;
+    }
+}
